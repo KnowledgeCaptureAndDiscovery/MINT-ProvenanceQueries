@@ -5,7 +5,7 @@
 #+   in: query
 #+   description: Template name
 #+   required: true
-#+   type: string
+#+   type: integer
 #+ summary: Query that retrieves all executions of a templat ?_templ and their status
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
