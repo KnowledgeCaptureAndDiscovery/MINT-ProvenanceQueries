@@ -1,7 +1,7 @@
 #+ endpoint: http://disk.isi.edu:3030/ds/query
 #+ method: GET
 #+ parameters:
-#+ - name: _templ
+#+ - name: templ
 #+   in: query
 #+   description: Template name
 #+   required: true
