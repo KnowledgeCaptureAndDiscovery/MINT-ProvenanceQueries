@@ -12,6 +12,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?execution ?status from <urn:x-arq:UnionGraph>
 WHERE {
-  ?execution <http://www.opmw.org/ontology/correspondsToTemplate> ?_templ_iri.
+  ?execution <http://www.opmw.org/ontology/correspondsToTemplate> ?_templ_integer.
   ?execution <http://www.opmw.org/ontology/hasStatus> ?status
 }
