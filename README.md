@@ -15,8 +15,8 @@ http://ontosoft.isi.edu:8001/api/KnowledgeCaptureAndDiscovery/MINT-ProvenanceQue
 
 * GetTemplates: gets all published templates and their names
 * GetExecutions: gets all existing executions and whether they are successful or not
-* GetExecutions<iri:Template>: gets all executions for a template
-* GetResourceMetadata<iri:Resource>: gets all metadata for a resource
-* GetInputs<iri:Execution>: gets all inputs and parameters of an execution 
-* GetResults<iri:Execution>: gets all results of an execution
-* GetActivities<iri:Execution>: gets all the activities and codes of an execution.
+* GetExecutions[iri:Template]: gets all executions for a template
+* GetResourceMetadata[iri:Resource]: gets all metadata for a resource
+* GetInputs[iri:Execution]: gets all inputs and parameters of an execution 
+* GetResults[iri:Execution]: gets all results of an execution
+* GetActivities[iri:Execution]: gets all the activities and codes of an execution.
