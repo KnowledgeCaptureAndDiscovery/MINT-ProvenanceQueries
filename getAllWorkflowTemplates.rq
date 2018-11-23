@@ -1,11 +1,12 @@
 #+ endpoint: http://disk.isi.edu:3030/ds/query
 #+ method: GET
-#+ summary: Query that retrieves all models and their basic metadata.
+#+ summary: Query that retrieves all workflow templates and their label.
 
+PREFIX opmw: <http://www.opmw.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?template ?label from <urn:x-arq:UnionGraph>
 WHERE {
-  ?template a <http://www.opmw.org/ontology/WorkflowTemplate>.
+  ?template a opmw:WorkflowTemplate.
   ?template rdfs:label ?label
 }

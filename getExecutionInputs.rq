@@ -1,0 +1,11 @@
+#+ method: GET
+#+ summary: TO DO - Query that gets all inputs and parameters of an execution
+#+ defaults:
+#+   - exec:TO ADD
+
+PREFIX opmw: <http://www.opmw.org/ontology/>
+
+SELECT ?execution ?status from <urn:x-arq:UnionGraph>
+WHERE {
+  #TO DO
+}
