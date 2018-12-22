@@ -8,6 +8,6 @@ PREFIX opmo: <http://openprovenance.org/model/opmo#> .
 
 SELECT ?result from <urn:x-arq:UnionGraph>
 WHERE {
-  ?result a opmw:WorkflowExecutionArtifact;
-          opmo:account ?_exec_iri.
+  ?result a opmw:WorkflowExecutionArtifact.
+  ?result opmo:account ?_exec_iri.
 }
