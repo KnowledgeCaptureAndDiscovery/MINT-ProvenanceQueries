@@ -4,7 +4,7 @@
 #+   - exec: http://www.opmw.org/export/omics/resource/WorkflowExecutionAccount/ACCOUNT-ANALYZEAFFYDATA--E8F1AEA8-3BAD-4678-973F-121BCD197F28
 
 PREFIX opmw: <http://www.opmw.org/ontology/>
-PREFIX opmo: <http://openprovenance.org/model/opmo#> .
+PREFIX opmo: <http://openprovenance.org/model/opmo#>
 
 SELECT ?result from <urn:x-arq:UnionGraph>
 WHERE {
