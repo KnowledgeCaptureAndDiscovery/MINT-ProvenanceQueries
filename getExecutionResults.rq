@@ -1,13 +1,17 @@
 #+ method: GET
-#+ summary: Query that gets all gets all results of an execution
+#+ summary: Query that gets all gets all intermediate and final results of an execution (and their labels)
 #+ defaults:
 #+   - exec: http://www.opmw.org/export/omics/resource/WorkflowExecutionAccount/ACCOUNT-ANALYZEAFFYDATA--E8F1AEA8-3BAD-4678-973F-121BCD197F28
 
 PREFIX opmw: <http://www.opmw.org/ontology/>
 PREFIX opmo: <http://openprovenance.org/model/opmo#>
+PREFIX opmv: <http://purl.org/net/opmv/ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?result from <urn:x-arq:UnionGraph>
+SELECT ?result ?label from <urn:x-arq:UnionGraph>
 WHERE {
   ?result a opmw:WorkflowExecutionArtifact.
   ?result opmo:account ?_exec_iri.
+  ?result opmv:wasGeneratedBy ?process.
+  ?result rdfs:label ?process.
 }
