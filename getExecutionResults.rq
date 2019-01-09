@@ -13,5 +13,5 @@ WHERE {
   ?result a opmw:WorkflowExecutionArtifact.
   ?result opmo:account ?_exec_iri.
   ?result opmv:wasGeneratedBy ?process.
-  ?result rdfs:label ?process.
+  ?result rdfs:label ?label.
 }
