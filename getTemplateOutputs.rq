@@ -1,11 +1,15 @@
 #+ method: GET
-#+ summary: TO DO - gets all outputs of a template and their metadata.
+#+ summary: gets all outputs of a template and their metadata.
 #+ defaults:
-#+   - exec:TO ADD
+#+   - temp: http://www.opmw.org/export/omics/resource/WorkflowTemplate/ANALYZEAFFYDATA-D751713988987E9331980363E24189CE
 
 PREFIX opmw: <http://www.opmw.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?execution ?status from <urn:x-arq:UnionGraph>
+SELECT ?output ?label from <urn:x-arq:UnionGraph>
 WHERE {
-  #TO DO
+  ?_temp_iri a opmw:WorkflowTemplate.
+  ?output a opmw:WorkflowTemplateArtifact.
+  ?output opmw:isGeneratedBy ?_temp_iri.
+  ?output rdfs:label ?label.
 }
