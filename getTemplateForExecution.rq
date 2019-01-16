@@ -10,6 +10,6 @@ SELECT ?template ?label from <urn:x-arq:UnionGraph>
 WHERE {
   ?template a opmw:WorkflowTemplate.
   ?template rdfs:label ?label.
-  ?execution a opmw:WorkflowExecutionAccount.
-  ?execution opmw:correspondsToTemplate ?template.
+  ?_exec_iri a opmw:WorkflowExecutionAccount.
+  ?_exec_iri opmw:correspondsToTemplate ?template.
 }
