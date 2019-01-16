@@ -14,7 +14,9 @@ WHERE {
   ?input rdfs:label ?label.
   ?input opmo:account ?_exec_iri.
   ?process1 a opmw:WorkflowExecutionProcess.
-  ?process2 a opmw:WorkflowExecutionProcess.
   ?process1 opmw:uses ?input.
-  FILTER NOT EXISTS (?input opmv:wasGeneratedBy ?process2).
+  MINUS {
+    ?process2 a opmw:WorkflowExecutionProcess.
+    ?input opmv:wasGeneratedBy ?process2.
+  }
 }
