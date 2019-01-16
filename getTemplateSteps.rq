@@ -1,5 +1,5 @@
 #+ method: GET
-#+ summary: TO DO - gets all steps of a template and their metadata.
+#+ summary: - gets all steps of a template and their metadata.
 #+ defaults:
 #+   - temp: http://www.opmw.org/export/omics/resource/WorkflowTemplate/ANALYZEAFFYDATA-D751713988987E9331980363E24189CE
 
