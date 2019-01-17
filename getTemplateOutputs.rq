@@ -6,10 +6,11 @@
 PREFIX opmw: <http://www.opmw.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?output ?label from <urn:x-arq:UnionGraph>
+SELECT ?output ?prop ?value from <urn:x-arq:UnionGraph>
 WHERE {
-  ?_temp_iri a opmw:WorkflowTemplate.
   ?output a opmw:WorkflowTemplateArtifact.
-  ?output opmw:isGeneratedBy ?_temp_iri.
-  ?output rdfs:label ?label.
+  ?output opmw:isVariableOfTemplate ?_temp_iri.
+  ?output ?prop ?value.
+  ?output opmw:isGeneratedBy ?process.
+  FILTER NOT EXISTS {?process2 opmw:uses ?output}.
 }
