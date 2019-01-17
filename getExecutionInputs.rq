@@ -13,7 +13,6 @@ WHERE {
   ?input a opmw:WorkflowExecutionArtifact.
   ?input rdfs:label ?label.
   ?input opmo:account ?_exec_iri.
-  ?process1 a opmw:WorkflowExecutionProcess.
   ?process1 opmv:used ?input.
   FILTER NOT EXISTS {?input opmv:wasGeneratedBy ?process2}.
 }

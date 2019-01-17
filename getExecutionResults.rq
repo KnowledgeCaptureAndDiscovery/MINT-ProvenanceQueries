@@ -11,8 +11,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?result ?label from <urn:x-arq:UnionGraph>
 WHERE {
   ?result a opmw:WorkflowExecutionArtifact.
+  ?result rdfs:label ?label.
   ?result opmo:account ?_exec_iri.
   ?result opmv:wasGeneratedBy ?process.
-  ?result rdfs:label ?label.
   FILTER NOT EXISTS {?process2 opmv:used ?result}.
 }

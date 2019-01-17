@@ -11,7 +11,6 @@ WHERE {
   ?input a opmw:WorkflowTemplateArtifact.
   ?input opmw:isVariableOfTemplate ?_temp_iri.
   ?input ?prop ?value.
-  ?process1 a opmw:WorkflowTemplateProcess.
   ?process1 opmw:uses ?input.
   FILTER NOT EXISTS {?input opmw:isGeneratedBy ?process2}.
 }
