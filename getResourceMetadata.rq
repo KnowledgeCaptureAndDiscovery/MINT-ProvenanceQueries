@@ -3,7 +3,7 @@
 #+ defaults:
 #+   - mv: https://w3id.org/mint/instance#TOPOFLOW
 
-SELECT ?prop ?value
+SELECT ?prop ?value from <urn:x-arq:UnionGraph>
 WHERE {
   ?_mv_iri ?prop ?value
 }
