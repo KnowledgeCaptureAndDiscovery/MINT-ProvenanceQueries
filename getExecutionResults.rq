@@ -14,4 +14,5 @@ WHERE {
   ?result opmo:account ?_exec_iri.
   ?result opmv:wasGeneratedBy ?process.
   ?result rdfs:label ?label.
+  FILTER NOT EXISTS {?process2 opmv:used ?result}.
 }
