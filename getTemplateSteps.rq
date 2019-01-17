@@ -6,10 +6,9 @@
 PREFIX opmw: <http://www.opmw.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?step ?label from <urn:x-arq:UnionGraph>
+SELECT ?step ?prop ?value from <urn:x-arq:UnionGraph>
 WHERE {
-  ?_temp_iri a opmw:WorkflowTemplate.
   ?step a opmw:WorkflowTemplateProcess.
   ?step opmw:isStepOfTemplate ?_temp_iri.
-  ?step rdfs:label ?label.
+  ?step ?prop ?value.
 }
