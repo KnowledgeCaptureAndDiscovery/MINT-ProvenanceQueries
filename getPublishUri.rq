@@ -5,7 +5,7 @@
 
 PREFIX opmw: <http://www.opmw.org/ontology/>
 
-SELECT ?_exec_iri ?result from <urn:x-arq:UnionGraph>
+SELECT ?result from <urn:x-arq:UnionGraph>
 WHERE {
   ?_exec_iri opmw:hasLocation ?result 
 }
