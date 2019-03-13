@@ -2,14 +2,15 @@
 A repository for storing the provenance queries in MINT.
 
 Current endpoint for testing: http://disk.isi.edu:3030/ds/query
+Current endpoint for production: http://ontosoft.isi.edu:3030/provenance/query
 
-GRLC REST API: http://ontosoft.isi.edu:8001/api/KnowledgeCaptureAndDiscovery/MINT-ProvenanceQueries
+GRLC REST API: http://ontosoft.isi.edu:8001/api/mintproject/MINT-ProvenanceQueries
 
 Queries to be specified below
 
 Retrieve executions of a given template (URI of the template should be urlencoded): 
 
-http://ontosoft.isi.edu:8001/api/KnowledgeCaptureAndDiscovery/MINT-ProvenanceQueries/getExecution?templ=http%3A%2F%2Fwww.opmw.org%2Fexport%2Fomics%2Fresource%2FWorkflowTemplate%2FPEPTIDE_SEARCH-D751713988987E9331980363E24189CE
+http://ontosoft.isi.edu:8001/api/mintproject/MINT-ProvenanceQueries/getExecution?templ=http%3A%2F%2Fwww.opmw.org%2Fexport%2Fomics%2Fresource%2FWorkflowTemplate%2FPEPTIDE_SEARCH-D751713988987E9331980363E24189CE
 
 # Queries in the API (more to be included when necessary):
 
@@ -24,4 +25,5 @@ http://ontosoft.isi.edu:8001/api/KnowledgeCaptureAndDiscovery/MINT-ProvenanceQue
 * (done)GetTemplateInputs[iri:Template]: gets all inputs of a template and their metadata.
 * (done)GetTemplateOutputs[iri:Template]: gets all outputs of a template and their metadata.
 * (done)GetTemplateSteps[iri:Template]: gets all steps of a template and their metadata.
+* (done)GetPublisherURI[iri:WorkflowExecutionArtifact]: get the remote/publisher location of a dataset.
 
