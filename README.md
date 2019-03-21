@@ -1,12 +1,11 @@
 # MINT-ProvenanceQueries
 A repository for storing the provenance queries in MINT.
 
-Endpoints: 
+Endpoint: 
 
-- Current endpoint for testing: http://disk.isi.edu:3030/ds/query
-- Current endpoint for production: http://ontosoft.isi.edu:3030/provenance/query
+- Current endpoint for production: https://endpoint.mint.isi.edu/provenance/query
 
-GRLC REST API: http://ontosoft.isi.edu:8001/api/mintproject/MINT-ProvenanceQueries
+GRLC REST API: https://query.mint.isi.edu/api/mintproject/MINT-ProvenanceQueries
 
 Queries to be specified below
 
