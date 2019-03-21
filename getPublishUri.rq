@@ -1,7 +1,7 @@
 #+ method: GET
 #+ summary: Query that gets the dataset remote url of a execucion
 #+ defaults:
-#+   - exec: http://www.opmw.org/export/resource/WorkflowExecutionArtifact/Caesar_Cypher-f8-aa2fce2f-42ab-4b6c-9b89-e14ea8a56f7c_EncryptedDocument
+#+   - exec: http://www.opmw.org/export/resource/WorkflowExecutionArtifact/Caesar_Cypher-1f-f788bcd8-75d9-4996-974d-ef6a442a36da_DocumentWithLineBreaks
 
 PREFIX opmw: <http://www.opmw.org/ontology/>
 

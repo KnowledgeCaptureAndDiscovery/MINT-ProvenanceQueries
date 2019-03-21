@@ -1,7 +1,7 @@
 #+ method: GET
 #+ summary: gets the template that was executed to produce the target execution.
 #+ defaults:
-#+   - exec: http://www.opmw.org/export/omics/resource/WorkflowExecutionAccount/ACCOUNT-ANALYZEAFFYDATA--E8F1AEA8-3BAD-4678-973F-121BCD197F28
+#+   - exec: http://www.opmw.org/export/resource/WorkflowExecutionAccount/Caesar_Cypher-1f-f788bcd8-75d9-4996-974d-ef6a442a36da
 
 PREFIX opmw: <http://www.opmw.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

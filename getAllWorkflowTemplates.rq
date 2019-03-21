@@ -1,4 +1,3 @@
-#+ endpoint: http://disk.isi.edu:3030/ds/query
 #+ method: GET
 #+ summary: Query that retrieves all workflow templates and their label.
 
