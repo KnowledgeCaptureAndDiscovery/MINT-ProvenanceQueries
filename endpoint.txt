@@ -1,1 +1,1 @@
-https://endpoint.mint.isi.edu/ds/query
+https://endpoint.mint.isi.edu/provenance/query
