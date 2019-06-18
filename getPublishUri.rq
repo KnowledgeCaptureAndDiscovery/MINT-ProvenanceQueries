@@ -3,7 +3,7 @@
 #+ defaults:
 #+   - exec: http://www.opmw.org/export/resource/WorkflowExecutionArtifact/Caesar_Cypher-1f-f788bcd8-75d9-4996-974d-ef6a442a36da_DocumentWithLineBreaks
 
-PREFIX opmw: <http://www.opmw.org/ontology/>
+PREFIX opmw: <https://www.opmw.org/ontology/>
 
 SELECT ?result from <urn:x-arq:UnionGraph>
 WHERE {

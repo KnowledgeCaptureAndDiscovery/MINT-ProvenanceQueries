@@ -3,7 +3,7 @@
 #+ defaults:
 #+   - temp: http://www.opmw.org/export/resource/WorkflowTemplateProcess/Caesar_Cypher-1f-8b204092-cf65-45ec-9dc2-32f5965b18e2_v1_linebreakNode
 
-PREFIX opmw: <http://www.opmw.org/ontology/>
+PREFIX opmw: <https://www.opmw.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?step ?prop ?value from <urn:x-arq:UnionGraph>
