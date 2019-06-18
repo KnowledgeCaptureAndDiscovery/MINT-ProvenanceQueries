@@ -1,7 +1,7 @@
 #+ method: GET
 #+ summary: Query that gets all gets all intermediate and final results of an execution (and their labels)
 #+ defaults:
-#+   - exec: http://www.opmw.org/export/resource/WorkflowExecutionAccount/Caesar_Cypher-1f-f788bcd8-75d9-4996-974d-ef6a442a36da
+#+   - exec: https://www.opmw.org/export/resource/WorkflowExecutionAccount/ClimComp_Precipi-90455b3a-0079-4a54-a444-a39fd1959e2b
 
 PREFIX opmw: <https://www.opmw.org/ontology/>
 PREFIX opmo: <http://openprovenance.org/model/opmo#>

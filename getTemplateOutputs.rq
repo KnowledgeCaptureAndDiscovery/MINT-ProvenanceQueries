@@ -1,7 +1,7 @@
 #+ method: GET
 #+ summary: gets all outputs of a template and their metadata.
 #+ defaults:
-#+   - temp: http://www.opmw.org/export/omics/resource/WorkflowTemplate/ANALYZEAFFYDATA-D751713988987E9331980363E24189CE
+#+   - temp: https://www.opmw.org/export/resource/WorkflowTemplate/SingleProteomicS-6b54f310-0476-4fcb-a235-5fc0a68dd4c7_v1
 
 PREFIX opmw: <https://www.opmw.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

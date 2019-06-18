@@ -1,7 +1,7 @@
 #+ method: GET
 #+ summary: Query that retrieves all executions of a template ?_templ and their status
 #+ defaults:
-#+   - templ: http://www.opmw.org/export/resource/WorkflowTemplate/Caesar_Cypher-1f-8b204092-cf65-45ec-9dc2-32f5965b18e2_v1
+#+   - templ: https://www.opmw.org/export/resource/WorkflowTemplate/SingleProteomicS-6b54f310-0476-4fcb-a235-5fc0a68dd4c7_v1
 
 PREFIX opmw: <https://www.opmw.org/ontology/>
 

@@ -1,7 +1,7 @@
 #+ method: GET
 #+ summary: query that retrieves all metadata from a target resource ?_mv
 #+ defaults:
-#+   - mv: https://w3id.org/mint/instance#TOPOFLOW
+#+   - mv: https://www.opmw.org/export/resource/WorkflowExecutionAccount/SingleProteomicS-7eca5052-f1de-4ef5-a0b8-b383fa805293
 
 SELECT ?prop ?value from <urn:x-arq:UnionGraph>
 WHERE {
