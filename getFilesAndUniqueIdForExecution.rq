@@ -1,0 +1,16 @@
+#+ method: GET
+#+ summary: Query the unique params and files
+#+ defaults:
+#+   - exec: https://www.opmw.org/export/resource/WorkflowExecutionAccount/cycles_v2_standa-216f7d3f-5480-4d3e-8461-d560850e26da
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX provModel: <http://openprovenance.org/model/opmo#>
+PREFIX opmw: <https://www.opmw.org/ontology/>
+SELECT ?file ?unique ?location ?workflow from <_exec_iri> {
+      ?param a opmw:WorkflowExecutionArtifact ;
+  		  rdfs:label "unique_id";
+		    provModel:account ?workflow; 
+  		  opmw:hasValue ?unique .
+	  ?file provModel:account ?workflow;
+         	opmw:hasLocation ?location .   
+}
