@@ -1,0 +1,16 @@
+#+ method: GET
+#+ summary: gets all the activities of an execution and their dependencies, linking to their respective template processes.
+#+ defaults:
+#+   - exec: https://www.opmw.org/export/resource/WorkflowExecutionAccount/ClimComp_Precipi-90455b3a-0079-4a54-a444-a39fd1959e2b
+
+PREFIX opmw: <https://www.opmw.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?p ?tP ?pDep ?tPDep from <urn:x-arq:UnionGraph>
+WHERE {
+  ?p opmw:isProcessOfExecution ?_exec_iri.
+  ?p prov:used/prov:wasGeneratedBy ?pDep.
+  ?p opmw:correspondsToTemplateProcess ?tP.
+  ?pDep opmw:correspondsToTemplateProcess ?tPDep.
+}

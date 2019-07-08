@@ -4,14 +4,13 @@
 #+   - exec: https://www.opmw.org/export/resource/WorkflowExecutionAccount/ClimComp_Precipi-90455b3a-0079-4a54-a444-a39fd1959e2b
 
 PREFIX opmw: <https://www.opmw.org/ontology/>
-PREFIX opmo: <http://openprovenance.org/model/opmo#>
-PREFIX opmv: <http://purl.org/net/opmv/ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 
 SELECT ?process ?label from <urn:x-arq:UnionGraph>
 WHERE {
   ?result a opmw:WorkflowExecutionArtifact.
-  ?result opmo:account ?_exec_iri.
-  ?result opmv:wasGeneratedBy ?process.
+  ?result opmw:isArtifactOfExecution ?_exec_iri.
+  ?result prov:wasGeneratedBy ?process.
   ?process rdfs:label ?label.
 }
